@@ -22,7 +22,7 @@ import json
 import shutil
 
 # Setup variables. Change as needed
-NAME = "mapillary"  
+NAME = "mapillary"
 VERSION = "1.0.12"
 AUTHOR = "Christopher Beddow"
 AUTHOR_EMAIL = "support@mapillary.zendesk.com"
@@ -172,7 +172,78 @@ setuptools.setup(
     package_dir=PACKAGE_DIR,
     # # A string or list of strings specifying what other distributions need to be installed
     # # when this one is
-    install_requires=locked_requirements("default"),
+    # install_requires=locked_requirements("default"),
+    install_requires=[
+        # attrs = "==21.2.0"
+        # bleach = "==3.3.0"
+        # certifi = "==2021.5.30"
+        # chardet = "==4.0.0"
+        "click",
+        # click-plugins = "==1.1.1"
+        # cligj = "==0.7.2"
+        # coverage = "==5.5"
+        # docutils = "==0.17.1"
+        # future = "==0.18.2"
+        "hypothesis",
+        "idna",
+        "iniconfig",
+        "mapbox-vector-tile",
+        "mercantile",
+        "munch",
+        "numpy",
+        "scipy",
+        "pkginfo",
+        "pluggy",
+        "protobuf",
+        "psutil",
+        # "py = "==1.10.0
+        "pyparsing",
+        "requests",
+        "requests-toolbelt",
+        "six",
+        "sortedcontainers",
+        "tqdm",
+        "twine",
+        "urllib3",
+        "vt2geojson",
+        "webencodings",
+        "Pygments",
+        "haversine",
+        "python-dotenv",
+        "shapely",
+        "turfpy",
+        "geojson",
+        "wheel",
+        "build",
+        "ipykernel",
+        "pytest",
+        "pytest-arraydiff",
+        "pytest-astropy",
+        "pytest-astropy-header",
+        "pytest-cov",
+        "pytest-doctestplus",
+        "pytest-filter-subpackage",
+        "pytest-openfiles",
+        "pytest-remotedata",
+        "readme-renderer",
+        "appdirs",
+        "black",
+        "flake8",
+        "mccabe",
+        "mypy-extensions",
+        "pathspec",
+        "pycodestyle",
+        "pyflakes",
+        "regex",
+        "toml",
+        "twine",
+        "check-manifest",
+        "sphinx",
+        "sphinx-markdown-builder",
+        "sphinx-autodoc-typehints",
+        "python-dateutil",
+        "pandas",
+        ],
     # # What Python version is required
     python_requires=REQUIRES_PYTHON,
     # # What package data to include
