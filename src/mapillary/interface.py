@@ -89,7 +89,7 @@ def set_access_token(token: str):
 
 
 @auth()
-def get_image_close_to(latitude=-122.1504711, longitude=37.485073, **kwargs):
+def get_image_close_to(longitude=-122.1504711, latitude=37.485073, **kwargs):
     """
     Function that takes a longitude, latitude as argument and outputs the near images. This
     makes an API call with the token set in set_access_token and returns a JSON object.
